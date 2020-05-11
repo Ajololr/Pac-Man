@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.600,D:\Андрос\Код\LinkedList.pas=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.821,=C:\Users\Andros\Desktop\IrF.gif</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.120,D:\Projects\2 сем\Курсовая\Код\Unit1.fmx=D:\Projects\2 сем\Курсовая\Код\Records.fmx</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.446,=D:\Projects\2 сем\Курсовая\Код\Unit2.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.005,D:\Projects\2 сем\Курсовая\Код\Unit2.pas=D:\Projects\2 сем\Курсовая\Код\Confirm.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.493,D:\Projects\2 сем\Курсовая\Код\Game.pas=D:\Projects\2 сем\Курсовая\Код\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.493,D:\Projects\2 сем\Курсовая\Код\Game.fmx=D:\Projects\2 сем\Курсовая\Код\Unit1.fmx</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.927,D:\Projects\2 сем\Курсовая\Код\PuckMan.dproj=D:\Projects\delphi projects\Project1.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.521,D:\Projects\2 сем\Курсовая\Код\MainMenu.pas=D:\Projects\delphi projects\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.005,D:\Projects\2 сем\Курсовая\Код\Unit2.fmx=D:\Projects\2 сем\Курсовая\Код\Confirm.fmx</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.389,D:\Projects\2 сем\Курсовая\Код\PacManUnit.pas=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.521,D:\Projects\2 сем\Курсовая\Код\MainMenu.fmx=D:\Projects\delphi projects\Unit1.fmx</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.509,D:\Projects\2 сем\Курсовая\Код\AboutUnit.pas=D:\Projects\2 сем\Курсовая\Код\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.854,D:\Projects\2 сем\Курсовая\Код\PacMan.dproj=D:\Projects\2 сем\Курсовая\Код\PuckMan.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.388,D:\Projects\2 сем\Курсовая\Код\PacMan.dproj=D:\Projects\2 сем\Курсовая\Код\Pac_Man.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.449,=D:\Projects\2 сем\Курсовая\Код\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.926,D:\Projects\2 сем\Курсовая\Код\PacMan.pas=D:\Projects\2 сем\Курсовая\Код\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.509,D:\Projects\2 сем\Курсовая\Код\AboutUnit.fmx=D:\Projects\2 сем\Курсовая\Код\Unit1.fmx</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.150,=D:\Projects\delphi projects\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.120,D:\Projects\2 сем\Курсовая\Код\Unit1.pas=D:\Projects\2 сем\Курсовая\Код\Records.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.106,=D:\Projects\2 сем\Курсовая\Код\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.509,=D:\Projects\2 сем\Курсовая\Код\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.724,=D:\Projects\2 сем\Курсовая\Код\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.883,D:\Projects\2 сем\Курсовая\Код\Unit1.pas=D:\Projects\2 сем\Курсовая\Код\LinkedList.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.595,=D:\Projects\2 сем\Курсовая\Код\Unit1.pas</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<NoProfile iOSSimulator="iPhone5"/>
+	</ActiveMobileDevice>
+	<ProjectSortOrder AutoSort="0" SortType="0">
+    <File Path="android-support-v4.dex.jar"/>
+    <File Path="cloud-messaging.dex.jar"/>
+    <File Path="fmx.dex.jar"/>
+    <File Path="google-analytics-v2.dex.jar"/>
+    <File Path="google-play-billing.dex.jar"/>
+    <File Path="google-play-licensing.dex.jar"/>
+    <File Path="google-play-services.dex.jar"/>
+    <File Path="C:"/>
+    <File Path="C:\Users"/>
+    <File Path="C:\Users\Andros"/>
+    <File Path="C:\Users\Andros\Desktop"/>
+    <File Path="C:\Users\Andros\Desktop\IrF.gif"/>
+    <File Path="MainMenuUnit.pas"/>
+    <File Path="MainMenuUnit.fmx"/>
+    <File Path="GameUnit.pas"/>
+    <File Path="GameUnit.fmx"/>
+    <File Path="ConfirmUnit.pas"/>
+    <File Path="ConfirmUnit.fmx"/>
+    <File Path="RecordsUnit.pas"/>
+    <File Path="RecordsUnit.fmx"/>
+    <File Path="AboutUnit.pas"/>
+    <File Path="AboutUnit.fmx"/>
+  </ProjectSortOrder>
+</BorlandProject>

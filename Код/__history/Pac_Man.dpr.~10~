@@ -1,0 +1,22 @@
+program Pac_Man;
+
+{$R *.dres}
+
+uses
+  System.StartUpCopy,
+  FMX.Forms,
+  MainMenuUnit in 'MainMenuUnit.pas' {StartMenu},
+  RecordsUnit in 'RecordsUnit.pas' {RecordsForm},
+  ConfirmUnit in 'ConfirmUnit.pas' {Form2},
+  GameUnit in 'GameUnit.pas' {Field};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(TStartMenu, StartMenu);
+  Application.CreateForm(TRecordsForm, RecordsForm);
+  Application.CreateForm(TForm2, Form2);
+  Application.CreateForm(TField, Field);
+  Application.Run;
+end.

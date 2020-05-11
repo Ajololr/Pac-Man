@@ -1,0 +1,57 @@
+unit ConfirmUnit;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.StdCtrls,
+  FMX.Controls.Presentation, FMX.Edit, RecordsUnit;
+
+type
+  TConfirmForm = class(TForm)
+    NameEdit: TEdit;
+    ConfirmLbl: TLabel;
+    ConfirmBtn: TButton;
+    procedure ConfirmBtnClick(Sender: TObject);
+    procedure NameEditKeyUp(Sender: TObject; var Key: Word; var KeyChar: Char; Shift: TShiftState);
+    procedure NameEditKeyDown(Sender: TObject; var Key: Word; var KeyChar: Char; Shift: TShiftState);
+  end;
+
+var
+  ConfirmForm: TConfirmForm;
+
+implementation
+
+{$R *.fmx}
+
+uses GameUnit;
+
+procedure TConfirmForm.ConfirmBtnClick(Sender: TObject);
+var
+    Temp: TPlayer;
+begin
+    Rewrite(RecordsForm.RecordsFile);
+    Temp.Name := NameEdit.Text;
+    Temp.Score := Field.ScoreValueLbl.Text;
+    Write(RecordsForm.RecordsFile, Temp);
+    //CloseFile(RecordsForm.RecordsFile);
+    Close;
+end;
+
+procedure TConfirmForm.NameEditKeyDown(Sender: TObject; var Key: Word;
+  var KeyChar: Char; Shift: TShiftState);
+begin
+    if Length(NameEdit.Text) > 11 then
+        KeyChar := #0;
+end;
+
+procedure TConfirmForm.NameEditKeyUp(Sender: TObject; var Key: Word;
+  var KeyChar: Char; Shift: TShiftState);
+begin
+    if Length(NameEdit.Text) > 0 then
+        ConfirmBtn.Enabled := true
+    else
+        ConfirmBtn.Enabled := false;
+end;
+
+end.

@@ -1,0 +1,31 @@
+unit Game;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.Ani,
+  FMX.Objects;
+
+type
+  TField = class(TForm)
+    Image1: TImage;
+    Pac: TImage;
+    PacMoveAnimation: TFloatAnimation;
+    PacAnimation: TBitmapListAnimation;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Field: TField;
+
+implementation
+
+{$R *.fmx}
+
+uses MainMenu;
+
+end.

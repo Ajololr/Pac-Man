@@ -1,0 +1,39 @@
+unit LinkedList;
+
+interface
+
+type
+    PNode = ^TNode;
+    TNode = record
+        Name: String;
+        Value: SmallInt;
+        Next: PNode;
+    end;
+
+    TMyList = class
+        Head: PNode;
+        constructor Create;
+        destructor Destroy;
+        procedure Add(Name: String; Value: SmallInt);
+        procedure Delete(Item: TNode);
+    end;
+
+implementation
+
+constructor TMyList.create;
+begin
+    Head := nil;
+end;
+
+procedure TMyList.Add(Name: String; Value: SmallInt);
+var
+    Temp: PNode;
+begin
+    New(Temp);
+    Temp^.Name := Name;
+    Temp^.Value := Value;
+    Temp^.Next := Head;
+    Head := Temp;
+end;
+
+end.

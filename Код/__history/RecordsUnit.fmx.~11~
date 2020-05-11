@@ -1,0 +1,62 @@
+object RecordsForm: TRecordsForm
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = Single
+  Caption = 'PAC-MAN'
+  ClientHeight = 362
+  ClientWidth = 359
+  Fill.Color = claMidnightblue
+  Fill.Kind = Solid
+  Position = MainFormCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCloseQuery = FormCloseQuery
+  DesignerMasterStyle = 0
+  object BackBtn: TButton
+    StyledSettings = []
+    Position.X = 93.000000000000000000
+    Position.Y = 281.000000000000000000
+    Size.Width = 180.000000000000000000
+    Size.Height = 60.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'MyStyle'
+    TabOrder = 1
+    Text = 'Back'
+    TextSettings.Font.Family = 'Crack Man'
+    TextSettings.Font.Size = 32.000000000000000000
+    TextSettings.FontColor = claGold
+    OnClick = BackBtnClick
+  end
+  object Label6: TLabel
+    StyledSettings = [Style]
+    Position.X = 64.000000000000000000
+    Position.Y = 8.000000000000000000
+    Size.Width = 241.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Family = 'Crack Man'
+    TextSettings.Font.Size = 50.000000000000000000
+    TextSettings.FontColor = claGold
+    TextSettings.HorzAlign = Center
+    Text = 'Records'
+    TabOrder = 10
+  end
+  object ConfirmLbl: TLabel
+    StyledSettings = []
+    Position.X = 23.000000000000000000
+    Position.Y = 64.000000000000000000
+    Size.Width = 42.000000000000000000
+    Size.Height = 209.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Family = 'Crack Man'
+    TextSettings.Font.Size = 32.000000000000000000
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    TextSettings.FontColor = claGold
+    TextSettings.HorzAlign = Center
+    TextSettings.Trimming = None
+    Text = '1. 2. 3. 4. 5.'
+    TabOrder = 3
+  end
+end

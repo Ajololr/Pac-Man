@@ -1,0 +1,31 @@
+unit PacManUnit;
+
+interface
+
+type
+    TPos = record
+        X: Byte;
+        Y: Byte;
+    end;
+
+    TPacMan = class
+        Pos: TPos;
+        Lifes: Byte;
+        procedure Move(NewY, NewX);
+        procedure Stop();
+    end;
+
+implementation
+
+procedure TPacMan.Move(NewY, NewX);
+begin
+    TField.PacMoveAnimation.Enabled := true;
+    TField.PacMoveAnimation.Enabled := true;
+end;
+
+procedure Stop();
+begin
+    //
+end;
+
+end.

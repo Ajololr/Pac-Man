@@ -1,0 +1,105 @@
+unit RecordsUnit;
+
+interface
+
+uses
+    System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
+    FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.StdCtrls,
+    FMX.Controls.Presentation, System.Rtti, FMX.Grid.Style, FMX.ScrollBox, Mmsystem,
+    FMX.Grid, LinkedList;
+
+type
+    TNodeValues = record
+        Name: String[11];
+        Value: SmallInt;
+    end;
+    TRecordsForm = class(TForm)
+        BackBtn: TButton;
+        Label6: TLabel;
+        PaceLbl: TLabel;
+        ScoreValueLbl: TLabel;
+        Label1: TLabel;
+        Label2: TLabel;
+        Label3: TLabel;
+        Label4: TLabel;
+        Lbl_5: TLabel;
+        Lbl_4: TLabel;
+        Lbl_1: TLabel;
+        Lbl_2: TLabel;
+        Lbl_3: TLabel;
+        procedure BackBtnClick(Sender: TObject);
+        procedure FormCloseQuery(Sender: TObject; var CanClose: Boolean);
+        procedure FormCreate(Sender: TObject);
+        procedure FormShow(Sender: TObject);
+    public
+        RecordsList: TMyList;
+        RecordsFile: File of TNodeValues;
+    end;
+
+var
+    RecordsForm: TRecordsForm;
+
+implementation
+
+{$R *.fmx}
+
+uses MainMenuUnit;
+
+procedure TRecordsForm.BackBtnClick(Sender: TObject);
+begin
+    RecordsForm.Close;
+end;
+
+procedure TRecordsForm.FormCloseQuery(Sender: TObject; var CanClose: Boolean);
+begin
+    StartMenu.Show;
+end;
+
+procedure TRecordsForm.FormCreate(Sender: TObject);
+var
+    Temp: TNodeValues;
+begin
+    RecordsList := TMyList.Create;
+    AssignFile(RecordsFile, 'DontTouch.PRF');
+    Rewrite(RecordsFile);
+   { While not(Eof(RecordsFile)) do
+    begin
+        Temp := Read(RecordsFile);
+        RecordsList.Add(Temp.Name, Temp.Value);
+    end;}
+    CloseFile(RecordsFile);
+end;
+
+procedure TRecordsForm.FormShow(Sender: TObject);
+begin
+    if RecordsList.Head <> nil then
+    begin
+        Lbl_1.Text := RecordsList.Head.Name;
+        if RecordsList.Head^.Next <> nil then
+        begin
+            Lbl_2.Text := RecordsList.Head^.Next.Name;
+            if RecordsList.Head^.Next^.Next <> nil then
+            begin
+                Lbl_3.Text := RecordsList.Head^.Next^.Next.Name;
+                if RecordsList.Head^.Next^.Next^.Next <> nil then
+                begin
+                    Lbl_4.Text := RecordsList.Head^.Next^.Next^.Next.Name;
+                    if RecordsList.Head^.Next^.Next^.Next^.Next <> nil then
+                        Lbl_5.Text := RecordsList.Head^.Next^.Next^.Next^.Next.Name
+                    else
+                        Lbl_5.Text := '.......................';
+                end
+                else
+                    Lbl_4.Text := '.......................';
+            end
+            else
+                Lbl_3.Text := '.......................';
+        end
+        else
+            Lbl_2.Text := '.......................';
+    end
+    else
+        Lbl_1.Text := '.......................';
+end;
+
+end.

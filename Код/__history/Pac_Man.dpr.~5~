@@ -1,0 +1,20 @@
+program Pac_Man;
+
+{$R *.dres}
+
+uses
+  System.StartUpCopy,
+  FMX.Forms,
+  MainMenu in 'MainMenu.pas' {StartMenu},
+  Records in 'Records.pas' {RecordsForm},
+  Confirm in 'Confirm.pas' {Form2};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(TStartMenu, StartMenu);
+  Application.CreateForm(TRecordsForm, RecordsForm);
+  Application.CreateForm(TForm2, Form2);
+  Application.Run;
+end.

@@ -1,0 +1,29 @@
+object RecordsForm: TRecordsForm
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = Single
+  Caption = 'Form1'
+  ClientHeight = 408
+  ClientWidth = 352
+  Position = MainFormCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object BackBtn: TButton
+    StyledSettings = []
+    Position.X = 95.000000000000000000
+    Position.Y = 328.000000000000000000
+    Size.Width = 180.000000000000000000
+    Size.Height = 60.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'MyStyle'
+    TabOrder = 1
+    Text = 'Back'
+    TextSettings.Font.Family = 'Crack Man'
+    TextSettings.Font.Size = 32.000000000000000000
+    TextSettings.FontColor = claGold
+    OnClick = BackBtnClick
+  end
+end
